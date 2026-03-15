@@ -1,0 +1,15 @@
+# IDE
+.idea/
+
+# Env files — anywhere in the repo
+**/.env
+**/.env.local
+**/.env.*.local
+
+# Internal docs (not for public repo)
+00-Description.md
+CLAUDE.md
+Docs/
+
+# OS
+.DS_Store
