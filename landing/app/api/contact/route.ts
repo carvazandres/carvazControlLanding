@@ -56,7 +56,7 @@ export async function POST(req: NextRequest) {
     await resend.emails.send({
       from: process.env.RESEND_FROM_EMAIL ?? 'CarvazControl <no-reply@resend.dev>',
       to: [process.env.RESEND_TO_EMAIL!],
-      subject: `🔔 Nuevo contacto: ${nombre}`,
+      subject: `Ferretera interesada - ${empresa?.trim() || nombre}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
           <div style="background: #0F172A; padding: 24px; border-radius: 12px 12px 0 0;">
